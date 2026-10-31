@@ -1,0 +1,92 @@
+{
+	"pages": [
+		{
+			"path": "pages/auth/auth",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "Home",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "Research Assistant",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/planner/planner",
+			"style": {
+				"navigationBarTitleText": "学习规划",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/review/review",
+			"style": {
+				"navigationBarTitleText": "复习",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/profile/profile",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/outline/outline",
+			"style": {
+				"navigationBarTitleText": "Writing Outline",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#7A849A",
+		"selectedColor": "#3157D5",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "研究",
+				"iconPath": "static/tabbar/research.png",
+				"selectedIconPath": "static/tabbar/research-active.png"
+			},
+			{
+				"pagePath": "pages/planner/planner",
+				"text": "规划",
+				"iconPath": "static/tabbar/planner.png",
+				"selectedIconPath": "static/tabbar/planner-active.png"
+			},
+			{
+				"pagePath": "pages/review/review",
+				"text": "复习",
+				"iconPath": "static/tabbar/review.png",
+				"selectedIconPath": "static/tabbar/review-active.png"
+			},
+			{
+				"pagePath": "pages/profile/profile",
+				"text": "我的",
+				"iconPath": "static/tabbar/profile.png",
+				"selectedIconPath": "static/tabbar/profile-active.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "Research Assistant",
+		"navigationBarBackgroundColor": "#F6F7FC",
+		"backgroundColor": "#F6F7FC"
+	},
+	"uniIdRouter": {}
+}
