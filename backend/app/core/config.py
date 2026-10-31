@@ -2,6 +2,7 @@ from functools import lru_cache
 from pathlib import Path
 from urllib.parse import quote_plus
 
+from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -20,7 +21,7 @@ class Settings(BaseSettings):
     MYSQL_PASSWORD: str = ""
     MYSQL_DATABASE: str = "my_appLearn"
 
-    SECRET_KEY: str
+    SECRET_KEY: str = Field(min_length=32)
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 7
     BACKEND_CORS_ORIGINS: str = "*"
     AVATAR_UPLOAD_DIR: Path = BACKEND_DIR / "uploads" / "avatars"
